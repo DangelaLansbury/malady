@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Malady</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="public/css/styles.css">
+    <!-- fonts -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/fira-mono" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/source-sans-pro" type="text/css"/>
+     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/kawkab-mono" type="text/css"/>
+     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/corey-sans" type="text/css"/>
+     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/ptah" type="text/css"/>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <div class="game-container">
+      <div id="game-canvas"></div>
+      <div id="info-modal" class="modal">
+        <div href="#" class="modal__content">
+          <p>An adaptation of <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" class="modal-link" target="_blank">Conway’s Game of Life</a> simulation, MALADY introduces the potential for a cell to mutate. And when conditions are right, mutant cells exhibit some hallmark cancer properties, like aggressive, sustained proliferation and a resistance to natural cell death. As the disease spreads, the light fades.
+          <br><br>
+          You, as a discerning immune system, must try to keep the light alive by clicking on mutant cells to kill them before they spread. But be careful: you can kill healthy cells as well. Killing too many healthy cells enhances disease progression. You may always press any key to restart.
+          </p>
+          <a href="#" class="modal__close">&times;</a>
+        </div>
+      </div>
+      <div class="instructions">
+        <div class="about">
+          <a href="#info-modal" class="about-btn">
+            <img src="public/images/fire.svg" alt="info icon">
+          </a>
+          <a href="https://github.com/DangelaLansbury/Malady" class="about-btn" target="_blank">
+            <img src="public/images/file-code.svg" alt="code icon">
+          </a>
+        </div>
+        <p class="instructions-text"><span style="color: #A89CDC;">Click cell</span> to kill | <span style="color: #A89CDC;">Press any key</span> to restart</p>
+      </div>
+    </div>
+    <script src="src/app.js" charset="utf-8"></script>
+    <script src="src/cell.js" charset="utf-8"></script>
+    <script src="src/mutate.js" charset="utf-8"></script>
+    <script src="src/prognosis.js" charset="utf-8"></script>
+  </body>
+</html>
