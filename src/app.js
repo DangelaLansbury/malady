@@ -10,11 +10,11 @@ let mutant;
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('game-canvas');
-  if (windowWidth > 2000) {
-    frameRate(16);
+  if (windowWidth > 1920) {
+    frameRate(8);
   }
-  else if (windowHeight > 1500) {
-    frameRate(16);
+  else if (windowHeight > 1080) {
+    frameRate(8);
   }
   else {
     frameRate(24);
