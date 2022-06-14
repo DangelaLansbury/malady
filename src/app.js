@@ -10,7 +10,7 @@ let mutant;
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('game-canvas');
-  frameRate(24);
+  frameRate(18);
   w = windowWidth * 0.00525;
   // Calculate columns and rows
   columns = floor(windowWidth / w);
