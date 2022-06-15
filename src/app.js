@@ -15,7 +15,7 @@ function setup() {
     w = 10;
   }
   else {
-    w = 6;
+    w = 8;
   }
   // Calculate columns and rows
   columns = floor(windowWidth / w);
