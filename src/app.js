@@ -11,11 +11,11 @@ function setup() {
   let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('game-canvas');
   if (windowWidth > 1500) {
-    frameRate(16);
+    frameRate(18);
     w = 10;
   }
   else {
-    frameRate(20);
+    frameRate(24);
     w = 7;
   }
   // Calculate columns and rows
